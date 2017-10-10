@@ -6,6 +6,11 @@ description: >
   master node. Allowing multiple masters is a work in progress.
 
 parameters:
+  etcd_volume_size:
+    type: number
+    description: >
+      size of the cinder volume for etcd storage
+    default: 0
 
   ssh_key_name:
     type: string

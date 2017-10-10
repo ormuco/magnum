@@ -6,6 +6,11 @@ description: >
   resource in the parent template (kubecluster.yaml).
 
 parameters:
+  etcd_volume_size:
+    type: number
+    description: >
+      size of the cinder volume for etcd storage
+    default: 0
 
   name:
     type: string
